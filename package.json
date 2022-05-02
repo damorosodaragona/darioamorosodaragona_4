@@ -21,7 +21,7 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/theme/resume",
+    "homepage": "https://damorosodaragona.github.io",
     "bugs": {
         "url": "https://github.com/StartBootstrap/startbootstrap-resume/issues",
         "email": "feedback@startbootstrap.com"
@@ -36,7 +36,8 @@
         "url": "https://github.com/StartBootstrap/startbootstrap-resume.git"
     },
     "dependencies": {
-        "bootstrap": "5.1.3"
+        "bootstrap": "5.1.3",
+        "gh-pages": "^3.2.3"
     },
     "devDependencies": {
         "autoprefixer": "10.4.4",
