@@ -11466,6 +11466,11 @@ ul.resume-experiences li.pink {
   margin-right: 0.5em;
 }
 
+.wherebold {
+  display: inline;
+  margin-right: 0.5em;
+}
+
 .what {
   font-size: 0.75em;
   /* 12/16 -> 12px */
@@ -11492,7 +11497,8 @@ ul.resume-experiences li.pink {
 }
 
 .when {
-  float: right;
+  /* float: right; */
+  /* to put the date on the right side*/
   color: #b9b9b9;
   font-style: italic;
 }
