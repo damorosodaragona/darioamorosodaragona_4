@@ -6,3 +6,10 @@ TO EDIT:
 5. (opitional) use npm start to see the change
 6. use npm build
 7. use node scripts/pages.js damorosodaragona master to deploy the change 
+
+
+TO EDITO COLOR:
+1. go to src/scss/variables
+2. open \_colors.scss
+3. edit the section "// Override Bootstrap color system" adding or modifyng the color
+4. change the line $primary: $blue4; inserting the new color as value of $primary
