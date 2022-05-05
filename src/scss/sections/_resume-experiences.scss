@@ -79,6 +79,7 @@ ul.resume-experiences li {
 ul.resume-experiences li:after {
     /* bullets */
     content: "• ";
+    /* color of the bullets */
     color:black;
     position: absolute;
     left: -12px; /*adjust manually*/

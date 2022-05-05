@@ -46,27 +46,28 @@ script.
           <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
           <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
 // The script itself, loaded AFTER your root element.
-.terminal
-  .terminal--pre
-    // Place your demo code here
-    code.code(style='white-space:nowrap;  display:inline-block; color:red')
-      | root $
-      span#myElement(style='color:white')
-    script(src='https://unpkg.com/typeit@8.5.4/dist/index.umd.js')
-    script.
-      new TypeIt("#myElement", {
-      speed: 50,
-      waitUntilVisible: true,
-      })
-      .type("whkiam", { delay: 300 })
-      .move(-3)
-      .delete(1)
-      .type("o")
-      .move(null, { to: "END" })
-      .pause(300)
-      .break()
-      .type("Dario Amoroso d'Aragona")
-      .go();
+.d-none.d-lg-block
+  .terminal
+    .terminal--pre(style='white-space:nowrap;  display:inline-block')
+      // Place your demo code here
+      code.code(style='color: red')
+        | root $ 
+        span#myElement(style='color:white')
+      script(src='https://unpkg.com/typeit@8.5.4/dist/index.umd.js')
+      script.
+        new TypeIt("#myElement", {
+        speed: 50,
+        waitUntilVisible: true,
+        })
+        .type("whkiam", { delay: 300 })
+        .move(-3)
+        .delete(1)
+        .type("o")
+        .move(null, { to: "END" })
+        .pause(300)
+        .break()
+        .type("Dario Amoroso d'Aragona")
+        .go();
 hr.m-0
 // Education
 // Bootstrap core JS

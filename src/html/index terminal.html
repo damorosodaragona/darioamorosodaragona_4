@@ -64,32 +64,30 @@ $(function(){
             
 
     <!-- The script itself, loaded AFTER your root element. -->
-        <div class="terminal">
-            <div class="terminal--pre">
-                <!-- Place your demo code here -->
-                <code class="code" id="myElement"></code>
-                <script src="https://unpkg.com/typeit@8.5.4/dist/index.umd.js"></script>
-                <script>
-                    new TypeIt("#myElement", {
-                    speed: 50,
-                    waitUntilVisible: true,
-                    beforeStep: async (instance: TypeIt) => {
-                    // Will fire before each step in the queue.
-                        instance.getElement().innerHTML += "$";
-                        },
-                    })
-                    .type("$ whkiam", { delay: 300 })
-                    .move(-3)
-                    .delete(1)
-                    .type("o")
-                    .move(null, { to: "END" })
-                    .pause(300)
-                    .break()
-                    .type("Dario Amoroso d'Aragona")
-                    .go();
-                </script>
-            </div>   
-        </div>
+    <div class="d-none d-lg-block">
+            <div class="terminal">
+                <div class="terminal--pre" style="white-space:nowrap;  display:inline-block">
+                    <!-- Place your demo code here -->
+                    <code class="code" style="color: red">root $ <span id="myElement" style="color:white"></span></code>
+                    <script src="https://unpkg.com/typeit@8.5.4/dist/index.umd.js"></script>
+                    <script>
+                        new TypeIt("#myElement", {
+                        speed: 50,
+                        waitUntilVisible: true,
+                        })
+                        .type("whkiam", { delay: 300 })
+                        .move(-3)
+                        .delete(1)
+                        .type("o")
+                        .move(null, { to: "END" })
+                        .pause(300)
+                        .break()
+                        .type("Dario Amoroso d'Aragona")
+                        .go();
+                    </script>
+                </div>   
+            </div>
+        </div> 
         <hr class="m-0" />
         <!-- Education-->   
 
