@@ -2,8 +2,6 @@
 // Styles
 // 
 
-// Import variables
-// @import "./academicons-1.9.2/css/academicons.min.css";
 
 
 // Import variables
@@ -18,6 +16,8 @@
 // Components
 @import "./components/sidenav.scss";
 @import "./components/icons.scss";
+@import "./components/terminal.scss";
+
 
 // Sections
 @import "./sections/resume-section.scss";

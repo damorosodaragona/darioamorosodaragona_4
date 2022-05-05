@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
@@ -49,10 +48,39 @@
             </div>
         </div>
     </section>
-    <hr class="m-0" />
-    <!-- Education-->
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
 </div>
+<!-- The script itself, loaded AFTER your root element.-->
+<div class="terminal">
+    <div class="terminal--pre">
+        <!-- Place your demo code here-->
+        <code class="code" style="white-space: nowrap; display: inline-block; color: red">
+            root $
+            <span id="myElement" style="color: white"></span>
+        </code>
+        <script src="https://unpkg.com/typeit@8.5.4/dist/index.umd.js"></script>
+        <script>
+            new TypeIt('#myElement', {
+                speed: 50,
+                waitUntilVisible: true,
+            })
+                .type('whkiam', { delay: 300 })
+                .move(-3)
+                .delete(1)
+                .type('o')
+                .move(null, { to: 'END' })
+                .pause(300)
+                .break()
+                .type("Dario Amoroso d'Aragona")
+                .go();
+        </script>
+    </div>
+</div>
+<hr class="m-0" />
+<!-- Education-->
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Typed JS-->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@latest/lib/typed.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+<script src="js/terminal.js"></script>
