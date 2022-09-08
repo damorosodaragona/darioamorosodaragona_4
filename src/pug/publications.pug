@@ -28,20 +28,52 @@ script.
 section#experience.resume-section
   .resume-section-content
     h2.mb-5 Publications
+    h2.subheading.mb-3 Conferences
     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
       .flex-grow-1
-        h3.mb-0 CATTO: Just-in-time Test Case Selection and Execution
-        .subheading.mb-3 ICSME 2022 - Tool Demo Track
-        p
-          em
-            | Abstract: Regression testing wants to prevent that errors, which have already been corrected once, creep back into a system that has been updated. A na &#x308;&imath;ve approach consists of re-running the entire test suite (TS) against the changed version of the software under test (SUT). However, this might result in a time- and resource-consuming process; e.g., when dealing with large and/or complex SUTs and TSs. To avoid this problem, Test Case Selection (TCS) approaches can be used. This kind of approaches build a temporary TS comprising only those test cases (TCs) that are relevant to the changes made to the SUT, so avoiding executing unnecessary TCs. In this paper, we introduce CATTO (Commit Adaptive Tool for Test suite Optimization), a tool implementing a TCS strategy for SUTs written in Java as well as a wrapper to allow developers to use CATTO within IntelliJ IDEA and to execute CATTO just-in-time before committing changes to the repository. We conducted a preliminary evaluation of CATTO on seven open-source Java projects to evaluate the reduction of the test-suite size, the loss of fault-revealing TCs, and the loss of fault-detection capability. The results suggest that CATTO can be of help to developers when performing TCS. The video demo and the documentation of the tool is available at: https://catto-tool.github.io/
-          | &gt;
-      .flex-shrink-0
-        a(href='assets/publications/CATTO Just-in-time Test Case Selection and Execution.pdf' download='CATTO Just-in-time Test Case Selection and Execution.pdf')
-          button.btn.btn-outline-info(type='button') Download
-      .flex-shrink-0
-        a(href='https://arxiv.org/abs/2206.08718' target='_blank')
-          button.btn.btn-outline-info(type='button') Link
+        ul.fa-ul.mb-0
+          li
+            details.mb-2
+              summary
+                span.subheading.mb-0  CATTO: Just-in-time Test Case Selection and Execution
+              em
+                b Abstract:
+                |  Regression testing wants to prevent that errors, which have already been corrected once, creep back into a system that has been updated. A na &#x308;&imath;ve approach consists of re-running the entire test suite (TS) against the changed version of the software under test (SUT). However, this might result in a time- and resource-consuming process; e.g., when dealing with large and/or complex SUTs and TSs. To avoid this problem, Test Case Selection (TCS) approaches can be used. This kind of approaches build a temporary TS comprising only those test cases (TCs) that are relevant to the changes made to the SUT, so avoiding executing unnecessary TCs. In this paper, we introduce CATTO (Commit Adaptive Tool for Test suite Optimization), a tool implementing a TCS strategy for SUTs written in Java as well as a wrapper to allow developers to use CATTO within IntelliJ IDEA and to execute CATTO just-in-time before committing changes to the repository. We conducted a preliminary evaluation of CATTO on seven open-source Java projects to evaluate the reduction of the test-suite size, the loss of fault-revealing TCs, and the loss of fault-detection capability. The results suggest that CATTO can be of help to developers when performing TCS. The video demo and the documentation of the tool is available at: https://catto-tool.github.io/
+            p.mb-1
+              | D. Amoroso d&apos;Aragona, F. Pecorelli, S. Romano, G. Scanniello, M. T. Baldassarre, A. Janes, V. Lenarduzzi
+            p.mb-3
+              | 38th IEEE International Conference on Software Maintenance and Evolution, Limassul, Cyprus - 2022
+            .flex-shrink-0
+              a(href='assets/publications/CATTO Just-in-time Test Case Selection and Execution.pdf' download='CATTO Just-in-time Test Case Selection and Execution.pdf') Download
+              a(href='https://arxiv.org/abs/2206.08718' target='_blank') Link
+          br
+          li
+            details.mb-2
+              summary
+                span.subheading.mb-0 Machine Learning-Based Test Smell Detection
+              em
+                b Abstract:
+                |  &mdash;Context: Test smells are symptoms of sub-optimal
+                |                                         design choices adopted when developing test cases. Previous studies have proved their harmfulness for test code maintainability
+                |                                         and effectiveness. Therefore, researchers have been proposing
+                |                                         automated, heuristic-based techniques to detect them. However,
+                |                                         the performance of such detectors is still limited and dependent
+                |                                         on thresholds to be tuned.
+                |                                         Objective: We propose the design and experimentation of a
+                |                                         novel test smell detection approach based on machine learning
+                |                                         to detect four test smells.
+                |                                         Method: We plan to develop the largest dataset of manuallyvalidated test smells. This dataset will be leveraged to train six
+                |                                         machine learners and assess their capabilities in within- and
+                |                                         cross-project scenarios. Finally, we plan to compare our approach
+                |                                         with state-of-the-art heuristic-based techniques.
+            p.mb-1
+              | V. Pontillo, D. Amoroso d&rsquo;Aragona, F. Pecorelli
+              | D. Di Nucci, F. Ferrucci, F. Palomba
+            p.mb-3
+              | 38th IEEE International Conference on Software Maintenance and Evolution, Limassul, Cyprus - 2022
+            .flex-shrink-0
+              a(href='assets/publications/Machine Learning-Based Test Smell Detection.pdf' download='Machine Learning-Based Test Smell Detection.pdf') Download
+              a(href='https://arxiv.org/abs/2208.07574' target='_blank') Link
     //
       <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
       <div class="flex-grow-1">
